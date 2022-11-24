@@ -1,0 +1,70 @@
+.contenedor-general {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contenedor-seleccionar-imagen {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.contenedor-fila {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    box-shadow: 0 3px 6px 0 rgba(3, 16, 50, 0.2);
+    background-color: #ffffff;
+    padding: 16px 0px;
+}
+
+.imagen-upload {
+    max-width: 500px;
+    max-height: 500px;
+    align-self: center;
+}
+
+.boton-analizar {
+    width: 119px;
+    height: 44px;
+    padding: 12px 24px 13px;
+    border-radius: 4px;
+    background-color: #2544e0;
+    border-color: #2544e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-texto {
+    font-family: Revert;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.input-texto {
+    font-family: Revert;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--pa-gris-ultra-dark);
+}
+
+.contenedor-seleccionar-imagen {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

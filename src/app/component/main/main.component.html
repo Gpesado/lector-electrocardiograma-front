@@ -1,0 +1,39 @@
+<div class="contenedor-general">
+    <div class="contenedor-fila">
+        <div class="contenedor-seleccionar-imagen">
+            <span>Select Image</span>
+            <input #imageInput type="file" accept="image/*" (change)="processFile(imageInput)">
+        </div>
+        <div class="contenedor-seleccionar-imagen">
+            <span class="input-texto">Graduacion Negro</span>
+            <input type="number" [(ngModel)]="graduacionNegro">
+        </div>
+        <div class="contenedor-seleccionar-imagen">
+            <span class="input-texto">Graduacion Rojo</span>
+            <input type="number" [(ngModel)]="graduacionRojo">
+        </div>
+        <div class="contenedor-seleccionar-imagen">
+            <span class="input-texto">Ajuste Horizontal</span>
+            <input type="number" [(ngModel)]="horizontalMovementFix">
+        </div>
+        <div class="contenedor-seleccionar-imagen">
+            <span class="input-texto">Cantidad de vias</span>
+            <input type="number" [(ngModel)]="numberOfVias">
+        </div>
+        <div class="contenedor-seleccionar-imagen">
+            <span class="input-texto">Ajuste Separacion Vias</span>
+            <input type="number" [(ngModel)]="dissplacementVias">
+        </div>
+        <button class="boton-analizar" mat-raised-button [disabled]="(imageName == null || imageName == '') || procesando" (click)="analize()">
+            <span class="boton-texto">Analizar</span>
+        </button>
+    </div>
+    <img class="imagen-upload" src="/assets/{{imageName}}" *ngIf="imageName.length > 0">
+    <div>
+        <canvas id="MyChart">{{ chart }}</canvas>
+    </div>
+
+    <div>
+        <canvas id="MyChartVia2">{{ chartVia2 }}</canvas>
+    </div>
+</div>
